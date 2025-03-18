@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Vision Academy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="IMG_5098.jpeg" alt="Website Logo"></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        <li><a href="#feedback" class="nav-link" data-section="feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <div class="hero">
+        <h1>Welcome to Holy Vision Academy</h1>
+        <p>A vibrant center of learning dedicated to nurturing young minds and fostering a culture of excellence since 2057</p>
+      </div>
+      
+      <div class="content">
+        <h2>Our Mission</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h3>Academic Excellence</h3>
+            <p>Our comprehensive curriculum is designed to impart knowledge and develop critical thinking skills for lifelong learning.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h3>Character Development</h3>
+            <p>We emphasize responsibility, integrity, and compassion through community service and leadership programs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Global Perspective</h3>
+            <p>Preparing students to be socially conscious and empathetic citizens in an interconnected world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section content">
+      <h1>Introduction</h1>
+      <p>Welcome to Holy Vision Academy, a vibrant center of learning dedicated to nurturing young minds and fostering a culture of excellence. Established B.S 2057, Holy Vision Academy has been at the forefront of providing quality education and holistic development opportunities for students.At Holy Vision Academy, we believe in creating an environment where every student feels valued, inspired, and empowered to reach their fullest potential. Our dedicated faculty members, with their expertise and passion for teaching, strive to ignite curiosity, encourage critical thinking, and instill a lifelong love for learning in each student. Our comprehensive curriculum is designed to not only impart academic knowledge but also to develop essential skills such as creativity, collaboration, communication, and problem-solving. We offer a wide range of academic programs, extracurricular activities, and enrichment opportunities to cater to the diverse interests and talents of our students. Beyond academics, we place great emphasis on character development and ethical values, instilling in our students a sense of responsibility, integrity, and compassion. Through various community service initiatives and leadership programs, we nurture well-rounded individuals who are not only academically proficient but also socially conscious and empathetic citizens.</p>
+      
+      <div class="about-info">
+        <h2>Our Mission</h2>
+        <p>To foster academic excellence, character development, and global perspective in a nurturing environment where every student can discover their full potential.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section content">
+      <h1>Gallery</h1>
+      <p>Check out our photo collection below.</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="IMG_5106.jpeg" alt="Holy Vision Academy Photo 2">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG_5107.jpeg" alt="Holy Vision Academy Photo 3">
+        </div>
+        <div class="gallery-item">
+          <img src="IMG_5108.jpeg" alt="Holy Vision Academy Photo 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us using the information below.</p>
+      
+      <div class="contact-info">
+        <div class="contact-details">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> Chandrapur-8,Rautahat</p>
+          <p><strong>Email:</strong> holyvisionacademy@gmail.com</p>
+          <p><strong>Phone:</strong>9855041117 </p>
+          
+          <h2>Opening Hours</h2>
+          <p>Sunday - Thrusday: 9:00 AM - 5:00 PM</p>
+          <p>Friday: 10:00 AM - 2:00 PM</p>
+          <p>Saturday: Closed</p>
+        </div>
+        
+        <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section content">
+      <h1>Feedback</h1>
+      <p>We value your feedback! Please share your thoughts about our services.</p>
+      
+      <div class="feedback-form">
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="feedbackEmail">Email:</label>
+            <input type="email" id="feedbackEmail" name="feedbackEmail" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Rate your experience:</label>
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5" required>
+              <label for="star5">5 stars</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4">4 stars</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3">3 stars</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2">2 stars</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1">1 star</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="feedbackMessage">Your Feedback:</label>
+            <textarea id="feedbackMessage" name="feedbackMessage" rows="5" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="improvements">Suggestions for improvement:</label>
+            <textarea id="improvements" name="improvements" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Holy Vision Academy. All rights reserved. | <a href="https://www.facebook.com/होली भिजन एकेडेमी" style="color: white; text-decoration: underline;" target="_blank">Follow us on Facebook</a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Navigation functionality
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.section');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Remove active class from all links and sections
+          navLinks.forEach(l => l.classList.remove('active'));
+          sections.forEach(s => s.classList.remove('active'));
+          
+          // Add active class to clicked link
+          this.classList.add('active');
+          
+          // Show the corresponding section
+          const sectionId = this.getAttribute('data-section');
+          document.getElementById(sectionId).classList.add('active');
+        });
+      });
+      
+      // Contact Form Handling
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message! We will get back to you soon.');
+          contactForm.reset();
+        });
+      }
+      
+      // Feedback Form Handling
+      const feedbackForm = document.getElementById('feedbackForm');
+      if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const rating = document.querySelector('input[name="rating"]:checked').value;
+          alert(`Thank you for your feedback! You rated us ${rating} stars.`);
+          feedbackForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
